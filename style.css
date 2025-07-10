@@ -1,0 +1,87 @@
+body {
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.menu-title {
+  text-align: center;
+  border: 5px solid black;
+  font-weight: bold;
+  color: black;
+  padding: 0.5em 2em;
+  font-size: 1.5rem;
+  border-radius: 100px;
+}
+
+.header-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  font-weight: bolder;
+  color: black;
+  padding: 5px;
+  font-size: 3rem;
+  border-radius: 10px;
+}
+
+.project-count {
+  font-size: 5rem;
+  font-weight: bold;
+  color: black;
+}
+.project-label {
+  font-size: 1.2rem;
+}
+
+.header-para {
+  position: relative;
+  z-index: 1;
+  font-family: "Tusker Grotesk", Helvetica, Arial, sans-serif;
+  font-size: 34px;
+  line-height: 50.8px;
+  font-weight: 500;
+  color: #020203;
+  padding: 2rem;
+}
+
+.para {
+  font-size: 4.2rem;
+  color: black;
+  text-align: center;
+  margin: 0;
+}
+
+/* Floating animated images */
+.pictures {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  pointer-events:none;
+}
+
+.animated-img {
+  position: absolute;
+  height: clamp(60px, 8vw, 150px);
+  z-index: 10;
+  pointer-events: none;
+}
